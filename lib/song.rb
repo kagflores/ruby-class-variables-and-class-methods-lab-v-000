@@ -38,10 +38,10 @@ class Song
         #genre_hash = {genre => 1}
         genre_hash[genre] = 1
       end
-      genre_hash.each do |key, value|
-        allgenres[key] = value
-        print allgenres
-      end
+    end
+    genre_hash.each do |key, value|
+      allgenres[key] = value
+      print allgenres
     end
   end
 
