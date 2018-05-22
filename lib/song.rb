@@ -40,7 +40,7 @@ class Song
       end
       genre_hash.each do |key, value|
         allgenres[key] = value
-        allgenres
+        print allgenres
       end
     end
   end
