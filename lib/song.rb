@@ -45,21 +45,14 @@ class Song
   end
 
   def self.artist_count
-    artist_hash = {}
-    v = 1
+    artistlist = {}
+    number_of_artists = 1
     @@artists.each do |artist|
-      #binding.pry
-      if artist_hash.has_key?(artist)
-        v = artist_hash[artist] +=1
-        artist_hash[artist] = v
-        #binding.pry
+      if artistlist.has_key?(artist)
+        number_of_artists += 1
+        artistlist[artist] = number_of_artists
       else
-        #genre_hash = {genre => 1}
-        artist_hash[artist] = 1
-      end
-      #binding.pry
-      artist_hash
-    end
+        artistlist[artist] = 1
   end
 
 end
