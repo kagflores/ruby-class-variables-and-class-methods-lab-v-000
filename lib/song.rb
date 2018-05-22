@@ -58,7 +58,7 @@ class Song
       end
       #binding.pry
     end
-    artislist.each {|key, value| artistlist[key] = value}
+    artistlist.each {|key, value| artistlist[key] = value}
   end
 
 end
