@@ -29,6 +29,7 @@ class Song
   def self.genre_count
     genre_hash = {}
     v = 1
+    allgenres = {}
     @@genres.each do |genre|
       #binding.pry
       if genre_hash.has_key?(genre)
