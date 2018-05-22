@@ -53,6 +53,8 @@ class Song
         artistlist[artist] = number_of_artists
       else
         artistlist[artist] = 1
+      end
+    end
   end
 
 end
