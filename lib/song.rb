@@ -34,7 +34,7 @@ class Song
       if genre_hash.has_key?(genre)
         v = genre_hash[genre] +=1
         genre_hash[genre] = v
-        genre_hash
+        genre_hash.sort_by{|key, value| value}
       else
         #genre_hash = {genre => 1}
         genre_hash[genre] = 1
