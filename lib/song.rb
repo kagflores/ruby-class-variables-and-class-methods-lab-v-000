@@ -54,8 +54,8 @@ class Song
       else
         artistlist[artist] = 1
       end
-      artistlist.sort_by{|k,v| v}
       binding.pry
+      artistlist.sort_by{|k,v| v}
     end
   end
 
