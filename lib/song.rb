@@ -57,8 +57,8 @@ class Song
         artistlist[artist] = 1
       end
       #binding.pry
-      artistlist.sort_by{|k,v| v}
     end
+    artislist.each {|key, value| artistlist[key] = value}
   end
 
 end
