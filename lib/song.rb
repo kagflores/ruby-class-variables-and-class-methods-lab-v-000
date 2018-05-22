@@ -39,7 +39,7 @@ class Song
         #genre_hash = {genre => 1}
         genre_hash[genre] = 1
       end
-      #binding.pry
+      binding.pry
       genre_hash
     end
   end
@@ -54,7 +54,7 @@ class Song
       else
         artistlist[artist] = 1
       end
-      binding.pry
+      #binding.pry
       artistlist.sort_by{|k,v| v}
     end
   end
