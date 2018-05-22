@@ -34,13 +34,12 @@ class Song
       if genre_hash.has_key?(genre)
         v = genre_hash[genre] +=1
         genre_hash[genre] = v
-        #binding.pry
+        genre_hash
       else
         #genre_hash = {genre => 1}
         genre_hash[genre] = 1
+        genre_hash
       end
-      binding.pry
-      genre_hash
     end
   end
 
